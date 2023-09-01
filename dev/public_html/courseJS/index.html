@@ -3,7 +3,9 @@
         <title>My autobiography</title>
         <link rel="stylesheet" href="./index.css"></link>
         <link rel="shortcut icon" href="./src/icons/iconJ.png"></link>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
+
     <body>
         <h1 class="tittle"><i>My autobiography</i></h1>
         <div class="principalBox1">
@@ -17,23 +19,22 @@
             </div>
         </div>       
         <div class="menu">
-            <ol>
-                <a href="./career/index.html">
-                    <li>
-                        <h3>Career</h3>
-                    </li>
-                </a>
-                <a href="./last_years/index.html">
-                    <li>
-                        <h3>Last years</h3>
-                    </li>
-                </a>
-            </ol>
+            <ul class="nav">
+                <li><a href="./career/index.html">Career</a></li>
+                <li><a href="./last_years/index.html">Last years</a></li>
+                <li class="tasks"><a href="#">Tasks</a>
+                    <ul>
+                        <li><a href="project_day3/index.html">Task day 3</a></li>
+                        <li><a href="project_day4/calculator.html">Task day 4</a></li>
+                        <li><a href="project_day5/cinema.html">Task day 5</a></li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-        <br>
+        <!--
         <h3 class="subtittle">Tasks</h3> 
         <div class="Tasks">
-            <ol>
+            <ul>
                 <a href="project_day3/index.html">
                     <li><h3>Task week 3</h3></li>
                 </a>
@@ -58,7 +59,7 @@
                 <a href="project_day4/calculator.html">
                     <li><h3>Task week 10</h3></li>
                 </a>
-            </ol>
-        </div>     
+            </ul>
+        </div>-->     
     </body>
 </html>
