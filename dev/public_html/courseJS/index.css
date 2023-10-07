@@ -1,12 +1,15 @@
 body{  
-    background-color: #ffffff;
+    /*background-color: #ffffff;*/
+    background-color: aqua;
     margin: 20px;
+    background-image: url('src/bg-image1.jpg');
 }
 
-.principalBox1{
+#principalBox1{
     display: flex;
     /*align-items: flex-start;*/
     border: 1px solid #ffffff;
+    margin-top: 5%;
 }
 .text{
     font-style:italic;
@@ -22,10 +25,13 @@ body{
     display: flex;
     justify-content: flex-end;
     /*position:fixed;*/
+    
 }
 .selfie img{
     width: 50%;
     max-width: 100%;
+    border-radius: 2%;
+    margin-left: 1px;
 }
 .tittle{
     text-align: center;
@@ -42,12 +48,14 @@ body{
     font-style:italic;
     text-align: center;
     font-size: 30px;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 20%;
 }
 .subtittle:hover{
     color: white;
 }
 a[href]{
-    color: rgb(0, 0, 0);
+    color: rgb(9, 8, 8);
     font-family: monospace;
     font-size: 12px;
     text-decoration: none; /* Esto elimina la línea subrayada */
@@ -65,7 +73,7 @@ a[href*="./last_years"]:hover{
 /*
     Para el menú desplegable
 */
-
+/*
 .nav {
     margin: 10px;
     background-color: #434343;
@@ -103,11 +111,30 @@ ul,ol{
 .nav li:hover > ul{
     display: block;
 }
-
+*/
+nav {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+/* Cambiar el color del texto a blanco para los elementos de navegación */
+.navbar-nav .nav-item .nav-link {
+    font-size: medium;
+}
+.navbar-nav li a{
+    color: rgb(0,0,0);
+}
 .tasks{
     margin-left: 70%;
-    background-color: #000;
+    background-color: #ffffff;
     display: block;
+}
+#career{
+    margin-top: 5%
+}
+
+#last_years{
+    margin-top: 5%
 }
 /*  PARA SUBMENU/SUBMENU 
     .nav li ul li{
@@ -120,12 +147,38 @@ ul,ol{
     }
 */
 
+@import "compass/css3";
+
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+
+
+body{
+  background: black;
+  padding-top: 10px;
+  text-align: center;
+}
+
+svg{
+  width: 1000px;
+  max-height: 120px;
+  display: block;
+  position: relative;
+  overflow: hidden; 
+  margin: 0 auto;
+  background: black;
+}
+
 /* Media Query para hacer el diseño más adaptable en pantallas pequeñas */
 @media (max-width: 768px) {
-    .principalBox1 {
+    #principalBox1 {
         flex-direction: column; /* Cambio de dirección para apilar los elementos en dispositivos móviles */
         /*align-items: flex-start;*/
     }
+    #career {
+        flex-direction: column; /* Cambio de dirección para apilar los elementos en dispositivos móviles */
+        /*align-items: flex-start;*/
+    }
+
     .selfie,
     .text {
         order: 2; /* Cambio de orden para que la imagen aparezca después del texto */
@@ -160,6 +213,7 @@ ul,ol{
         
     }
 }
+
 
   
   
