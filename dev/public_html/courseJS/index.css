@@ -11,6 +11,13 @@ body{
     border: 1px solid #ffffff;
     margin-top: 5%;
 }
+#carouselExampleCaptions{
+    display: flex;
+    max-height: 500px;
+    max-width: 100%;
+    margin:auto;
+    margin-bottom: 10px;
+}
 .text{
     font-style:italic;
     text-align: justify;
@@ -19,6 +26,7 @@ body{
     display: flex;
     flex-direction: column;
 }
+
 .selfie{
     flex: 1;
     padding: 10px;
